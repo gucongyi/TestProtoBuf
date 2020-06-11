@@ -12,8 +12,8 @@ public class TestProtoSerAnUnSer : MonoBehaviour
         //1.序列化
         StoreRequest storeRequest = new StoreRequest();
         storeRequest.Name = "goods";
-        storeRequest.Num = 50;
-        storeRequest.Result = 1;
+        storeRequest.Num = -50;
+        storeRequest.Result = -1;
         for (int i = 0; i < 50; i++)
         {
             string str = $"str{i + 1}";
@@ -22,6 +22,9 @@ public class TestProtoSerAnUnSer : MonoBehaviour
         byte[] bytes=ProtobufTool.Serialize(storeRequest);
         //2.反序列化
         StoreRequest storeRequestUnSer = ProtobufTool.Deserialize<StoreRequest>(bytes);
+        byte[] maBytes = DeSerialize.Serialize(storeRequest);
+        //2.反序列化
+        StoreRequest maStoreRequestUnSer = DeSerialize.Serialization<StoreRequest>(maBytes);
     }
 
     // Update is called once per frame
