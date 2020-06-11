@@ -1,1 +1,1 @@
-protoc --proto_path=E:\Work\TestProtoBuf\ProtoBufTool\Proto --csharp_out E:\Work\TestProtoBuf\TestProtoBuf\Assets\Protocal\ProtoClass StoreRequest.proto
+protoc --proto_path=E:\Work\TestProtoBuf\ProtoBufTool\Proto（proto文件夹位置） --csharp_out E:\Work\TestProtoBuf\TestProtoBuf\Assets\Protocal\ProtoClass（类生成文件夹位置） StoreRequest.proto（proto文件）
