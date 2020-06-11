@@ -1,0 +1,1 @@
+protoc --proto_path=E:\Work\TestProtoBuf\ProtoBufTool\Proto --csharp_out E:\Work\TestProtoBuf\TestProtoBuf\Assets\Protocal\ProtoClass StoreRequest.proto
